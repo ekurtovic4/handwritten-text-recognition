@@ -1,3 +1,5 @@
+# A Handwritten Text Recognition Model for the Bosnian Language: Mixed Print and Cursive Scripts
+
 ## 1. Introduction & Project Overview
 
 ## 2. Workflow & Pipeline Structure
