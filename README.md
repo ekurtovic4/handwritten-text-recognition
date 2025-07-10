@@ -9,6 +9,30 @@
 - The data is split into training (70%), validation (20%), and test (10%) partitions.
 - **HDF5** files are then created from these datasets, following the previous partitioning.
 
+**2. Model Architecture**
+<br><br>
+The HTR model in this project is implemented in Python using TensorFlow, following the approach from the [original paper](https://ieeexplore.ieee.org/abstract/document/9266005) and its [GitHub repository](https://github.com/arthurflor23/handwritten-text-recognition/tree/master), with minor adaptations.
+
+The model consists of three main components:
+
+- **Convolutional Block**
+  - A series of mini-blocks combining standard and gated convolutions
+  - All convolutional layers use He uniform initialization and PReLU activation
+  - Batch normalization is applied after each layer
+  - Dropout (0.2) is used in the last three gated convolutions for regularization
+
+- **Recurrent Block**  
+  - Two bidirectional GRU (BGRU) layers with an intermediate dense layer
+  - Dropout (0.5) is applied within the GRU cells
+
+- **Output Layer**  
+  - A final dense layer maps to the character set size plus one CTC blank token
+  - The model uses Connectionist Temporal Classification (CTC) for transcription
+
+The model architecture is shown in the image below:
+<br><br>
+<img src="https://github.com/user-attachments/assets/d0f51239-c079-4cc4-80ec-089798c6b9b2" width="300" />
+
 ## Sample Data & Formats
 Three individual datasets are used, containing images and labels of:
 - **words** (_labels_w_)
