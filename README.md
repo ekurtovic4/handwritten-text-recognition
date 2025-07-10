@@ -36,3 +36,8 @@ Currently supported datasets for HDF5 file creation are the three mentioned abov
 ## Evaluation Metrics & Results
 
 ## Model Comparison & Analysis
+
+## Referenced repositories
+The following repositories were used within the project:
+- [handwritten-text-recognition](https://github.com/arthurflor23/handwritten-text-recognition)
+- [masters-theses-htr](https://github.com/abegovac2/masters-theses-HTR)
