@@ -1,6 +1,15 @@
 # A Handwritten Text Recognition Model for the Bosnian Language: Mixed Print and Cursive Scripts
 
 ## Introduction & Project Overview
+This project focuses on **Handwritten Text Recognition (HTR) for the Bosnian language**, specifically addressing **mixed writing styles (printed and cursive letters)**. This is a critical and challenging area, particularly given the Bosnian language's active use of both script styles simultaneously.
+
+Traditional HTR systems often struggle when encountering documents that combine printed and cursive handwriting, a common occurrence in everyday practice. This project's goal is to develop a robust HTR system capable of accurately transcribing Bosnian text regardless of whether it's written in a mixed style, where printed and cursive letters appear within the same document, sentence, or even word.
+
+Key challenges this project addresses include:
+- Mixed Writing Styles: Accurately distinguishing and switching between printed and cursive character forms.
+- Continuity and Segmentation: Handling both connected (cursive) and disconnected (printed) characters within words.
+- Handwriting Variations: Ensuring the model is robust to individual differences in handwriting.
+- Data Scarcity: Overcoming the significant lack of publicly available, high-quality Bosnian HTR datasets, especially those featuring mixed styles.
 
 ## Workflow & Pipeline Structure
 **1. Dataset preprocessing**
