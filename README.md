@@ -12,14 +12,14 @@ Key challenges this project addresses include:
 - Data Scarcity: Overcoming the significant lack of publicly available, high-quality Bosnian HTR datasets, especially those featuring mixed styles.
 
 ## Workflow & Pipeline Structure
-**1. Dataset preprocessing**
+
+### Dataset preprocessing
 - The initial dataset consists of 156 different texts, each with an image of the full handwritten text (scanned at 300 DPI) and an XML file containing word labels (in **PascalVOC** format).
 - Labels and images of individual words and lines of text are extracted, resulting in three datasets (_labels_w_, _labels_l_, and _labels_l_m_). All images are in JPG format, and all labels are stored in TXT files.
 - The data is split into training (70%), validation (20%), and test (10%) partitions.
 - **HDF5** files are then created from these datasets, following the previous partitioning.
 
-**2. Model Architecture**
-<br><br>
+### Model Architecture
 The HTR model in this project is implemented in Python using TensorFlow, following the approach from the [original paper](https://ieeexplore.ieee.org/abstract/document/9266005) and its [GitHub repository](https://github.com/arthurflor23/handwritten-text-recognition/tree/master), with minor adaptations.
 
 The model consists of three main components:
