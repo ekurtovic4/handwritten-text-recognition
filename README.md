@@ -13,7 +13,7 @@ Key challenges this project addresses include:
 
 ## Workflow & Pipeline Structure
 
-### Dataset preprocessing
+### Dataset Preprocessing
 - The initial dataset consists of 156 different texts, each with an image of the full handwritten text (scanned at 300 DPI) and an XML file containing word labels (in **PascalVOC** format).
 - Labels and images of individual words and lines of text are extracted, resulting in three datasets (_labels_w_, _labels_l_, and _labels_l_m_). All images are in JPG format, and all labels are stored in TXT files.
 - The data is split into training (70%), validation (20%), and test (10%) partitions.
