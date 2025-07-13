@@ -175,3 +175,10 @@ This indicates that small character errors accumulate, affecting overall sequenc
 The following repositories were used within the project:
 - [handwritten-text-recognition](https://github.com/arthurflor23/handwritten-text-recognition)
 - [masters-theses-htr](https://github.com/abegovac2/masters-theses-HTR)
+
+## Authors
+- [Lamija Borovina](https://github.com/lborovina1)
+- [Kanita Kadušić](https://github.com/kanitakadusic)
+- [Esma Kurtović](https://github.com/ekurtovic4)
+
+This project was completed as part of the Artificial Intelligence course at the Faculty of Electrical Engineering, University of Sarajevo.
